@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center Agent Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Call Center Agent Assignment</h1>
+    </header>
+    <main class="container">
+        <form id="agentForm">
+            <div class="form-group">
+                <label for="agentNames">Agent Names (separated by commas):</label>
+                <input type="text" id="agentNames" name="agentNames" required>
+            </div>
+            <div class="form-group">
+                <label for="callCenter">Select Call Center:</label>
+                <select id="callCenter" name="callCenter" required>
+                    <option value="">Select Call Center</option>
+                    <option value="WNS">WNS</option>
+                    <option value="BUWELO">BUWELO</option>
+                    <option value="IDEAL">IDEAL</option>
+                    <option value="TEP">TEP</option>
+                </select>
+            </div>
+            <button type="submit">Assign Agents</button>
+        </form>
+        <div class="call-center-columns">
+            <div id="WNS" class="call-center-column">
+                <h2>WNS</h2>
+                <ul></ul>
+            </div>
+            <div id="BUWELO" class="call-center-column">
+                <h2>BUWELO</h2>
+                <ul></ul>
+            </div>
+            <div id="IDEAL" class="call-center-column">
+                <h2>IDEAL</h2>
+                <ul></ul>
+            </div>
+            <div id="TEP" class="call-center-column">
+                <h2>TEP</h2>
+                <ul></ul>
+            </div>
+        </div>
+        <div id="message"></div>
+    </main>
+    <footer>
+        <!-- You can include any footer content here -->
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
